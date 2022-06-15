@@ -11,7 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ChessGameTask\ChessTaskCore\ChessTaskCore.csproj" />
     <ProjectReference Include="..\ChessCore\ChessCore.csproj" />
   </ItemGroup>
 
