@@ -1,4 +1,4 @@
-﻿using ChessTaskCore;
+﻿using ChessCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +22,7 @@ namespace WpfChessApp
     public partial class MainWindow : Window
     {
         object lastSender;
-        ChessTaskCore.Figure lastFigure;
+        ChessCore.Figure lastFigure;
         /*private void MouseLeftButton(object sender, MouseButtonEventArgs e)
         {
             MessageBox.Show("DDDD");

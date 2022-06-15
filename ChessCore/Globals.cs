@@ -1,7 +1,7 @@
 ﻿//Galieva Zilya 220, ChessTask, 12/04/22
 using System.Collections.Generic;
 
-namespace ChessTaskCore
+namespace ChessCore
 {
     public static class Globals
     {

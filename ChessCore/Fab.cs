@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ChessTaskCore
+namespace ChessCore
 {
     public class Fab
     {

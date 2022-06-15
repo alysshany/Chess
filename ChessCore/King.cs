@@ -1,7 +1,7 @@
 ﻿//Galieva Zilya 220, ChessTask, 12/04/22
 using System;
 
-namespace ChessTaskCore
+namespace ChessCore
 {
     public class King : Figure
     {
