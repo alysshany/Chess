@@ -23,27 +23,6 @@ namespace WpfChessApp
     {
         object lastSender;
         ChessCore.Figure lastFigure;
-        /*private void MouseLeftButton(object sender, MouseButtonEventArgs e)
-        {
-            MessageBox.Show("DDDD");
-            string s = "dddd";
-            if (((sender as Button).Content.ToString() == "") && lastFigure.Move(Grid.GetColumn((UIElement)sender) + "" +
-                              Grid.GetRow((UIElement)sender)))
-            {
-                (sender as Button).Content = (lastSender as Button).Content;
-                (lastSender as Button).Content = "";
-                lastSender = sender;
-                return;
-            }
-
-            if ((sender as Button).Content.ToString() != "")
-            {
-                (sender as Button).Content = (lastSender as Button).Content;
-                (lastSender as Button).Content = "";
-                return;
-            }
-        }
-        */
         private void MouseRightButton(object sender, MouseButtonEventArgs e)
         {
             if (mainListBox.SelectedItem != null)
