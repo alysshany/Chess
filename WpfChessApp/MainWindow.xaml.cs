@@ -42,6 +42,12 @@ namespace WpfChessApp
                             Grid.GetRow((UIElement)sender).ToString());
                 return;
             }
+            if ((sender as Button) == (lastSender as Button))
+            {
+                (sender as Button).Content = " ";
+                lastSender = null;
+                lastFigure = null;
+            }
         }
 
         private void MouseLeftButton(object sender, MouseButtonEventArgs e)
