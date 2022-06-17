@@ -113,5 +113,6 @@
         <Button Content="" Grid.Column="8" HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center" Height="88" Width="94" Background="Beige" MouseRightButtonUp="MouseRightButton" PreviewMouseLeftButtonUp="MouseLeftButton"/>
         <Button Content="" Grid.Column="8" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Height="88" Width="94" Background="Beige" MouseRightButtonUp="MouseRightButton" PreviewMouseLeftButtonUp="MouseLeftButton"/>
         <Button Content="" Grid.Column="8" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="88" Width="94" Background="Beige" MouseRightButtonUp="MouseRightButton" PreviewMouseLeftButtonUp="MouseLeftButton"/>
+        <Label Content="Чтобы удалить фигуры,&#xD;&#xA;выберите её и щелкните &#xD;&#xA;ЛКМ по ней" Grid.Column="10" HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center" Height="68" Width="180"/>
     </Grid>
 </Window>

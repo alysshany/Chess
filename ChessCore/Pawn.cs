@@ -9,8 +9,8 @@ namespace ChessCore
 
         public override bool IsRightMove(int x1, int y1)
         {
-            return ((X == x1 && Y == 2 && Y + 2 >= y1) ||
-                    (X == x1 && Y + 1 == y1));
+            return (X == x1 && Y == 2 && Y + 2 >= y1) ||
+                    (X == x1 && Y + 1 == y1);
         }
     }
 }

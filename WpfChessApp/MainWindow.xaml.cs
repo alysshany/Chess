@@ -27,11 +27,11 @@ namespace WpfChessApp
         {
             if (mainListBox.SelectedItem != null)
             {
-                string[] s = mainListBox.SelectedItem.ToString().Split();
-                string n = s[1].Trim();
-                lastFigure = Fab.FiguresMaking(n + " " + Grid.GetColumn((UIElement)sender).ToString() + " " +
+                string[] str = mainListBox.SelectedItem.ToString().Split();
+                string name = str[1].Trim();
+                lastFigure = Fab.FiguresMaking(name + " " + Grid.GetColumn((UIElement)sender).ToString() + " " +
                                             Grid.GetRow((UIElement)sender).ToString());
-                (sender as Button).Content = n;
+                (sender as Button).Content = name;
                 lastSender = sender;
                 mainListBox.SelectedItem = null;
             }
@@ -42,16 +42,14 @@ namespace WpfChessApp
                             Grid.GetRow((UIElement)sender).ToString());
                 return;
             }
-            if ((sender as Button) == (lastSender as Button))
-            {
-                (sender as Button).Content = " ";
-                lastSender = null;
-                lastFigure = null;
-            }
         }
 
         private void MouseLeftButton(object sender, MouseButtonEventArgs e)
         {
+            if (lastFigure == null)
+            {
+                return;
+            }
             if (lastFigure.Move(Grid.GetColumn((UIElement)sender) + "" +
                               Grid.GetRow((UIElement)sender)))
             {
@@ -59,6 +57,12 @@ namespace WpfChessApp
                 (lastSender as Button).Content = "";
                 lastSender = sender;
                 return;
+            }
+            if ((sender as Button) == (lastSender as Button))
+            {
+                (sender as Button).Content = "";
+                lastSender = null;
+                lastFigure = null;
             }
         }
     }
