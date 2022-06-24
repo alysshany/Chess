@@ -9,7 +9,7 @@ namespace ChessCore
 
         public override bool IsRightMove(int x1, int y1)
         {
-            return (X == x1 || Y == y1);
+            return X == x1 || Y == y1;
         }
         public override bool Move(string s)
         {

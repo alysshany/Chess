@@ -9,7 +9,7 @@ namespace ChessCore
 
         public override bool IsRightMove(int x1, int y1)
         {
-            return (Math.Abs(X - x1) == Math.Abs(Y - y1));
+            return Math.Abs(X - x1) == Math.Abs(Y - y1);
         }
         public override bool Move(string s)
         {
