@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿//Galieva Zilya 220, ChessTask, 20/06/22
 
 namespace ChessCore
 {

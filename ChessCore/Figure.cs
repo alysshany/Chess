@@ -17,7 +17,7 @@ namespace ChessCore
 
         public abstract bool IsRightMove(int x1, int y1);
 
-        public bool Move(string s)
+        public virtual bool Move(string s)
         {
             int[] array = Checking.Check(s);
             if (IsRightMove(array[0], array[1]))

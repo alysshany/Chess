@@ -1,4 +1,5 @@
-﻿using ChessCore;
+﻿//Galieva Zilya 220, ChessTask, 20/06/22
+using ChessCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +30,8 @@ namespace WpfChessApp
             {
                 string[] str = mainListBox.SelectedItem.ToString().Split();
                 string name = str[1].Trim();
-                lastFigure = Fab.FiguresMaking(name + " " + Grid.GetColumn((UIElement)sender).ToString() + " " +
+                lastFigure = Fab.FiguresMaking(name + " " +
+                                            Grid.GetColumn((UIElement)sender).ToString() + " " +
                                             Grid.GetRow((UIElement)sender).ToString());
                 (sender as Button).Content = name;
                 lastSender = sender;
@@ -38,7 +40,8 @@ namespace WpfChessApp
             if ((sender as Button).Content.ToString() != "")
             {
                 lastSender = sender;
-                lastFigure = Fab.FiguresMaking((sender as Button).Content + " " + Grid.GetColumn((UIElement)sender).ToString() + " " +
+                lastFigure = Fab.FiguresMaking((sender as Button).Content + " " + 
+                            Grid.GetColumn((UIElement)sender).ToString() + " " +
                             Grid.GetRow((UIElement)sender).ToString());
                 return;
             }
